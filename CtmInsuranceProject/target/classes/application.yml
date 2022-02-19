@@ -1,0 +1,36 @@
+
+server:
+  port: 9091
+
+
+kafka:
+  consumer:
+    auto-offset-reset: earliest
+    bootstrap-servers: localhost:9092
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    group-id: ctm-customer-event
+    userDetailsTopic: userDetailsTopic
+    addressDetailsTopic: addressDetailsTopic
+    userPoliciesTopic: userPoliciesTopic
+
+  producer:
+    bootstrap-servers: localhost:9092
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    group-id: ctm-customer-event
+    userDetailsTopic: userDetailsTopic
+    addressDetailsTopic: addressDetailsTopic
+    userPoliciesTopic: userPoliciesTopic
+
+
+aws:
+  accessKey: AKIAXO3L6DF7DTCRUJ4W
+  secretKey: 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
+  region: us-west-2
+
+insurance:
+  config:
+    userDetailsFile: src/main/resources/userDetails.csv
+    addressDetailsFile: src/main/resources/addressDetails.csv
+    userPoliciesFile: src/main/resources/userPolicies.csv
