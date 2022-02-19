@@ -25,8 +25,8 @@ kafka:
 
 
 aws:
-  accessKey: AKIAXO3L6DF7DTCRUJ4W
-  secretKey: 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
+  accessKey: 
+  secretKey: 
   region: us-west-2
 
 insurance:
