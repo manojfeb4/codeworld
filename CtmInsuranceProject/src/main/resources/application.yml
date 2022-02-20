@@ -13,6 +13,9 @@ kafka:
     userDetailsTopic: userDetailsTopic
     addressDetailsTopic: addressDetailsTopic
     userPoliciesTopic: userPoliciesTopic
+    policySubTypesTopic: policySubTypesTopic
+    refPolicyTypesTopic: refPolicyTypesTopic
+    policyPaymentsTopic: policyPaymentsTopic
 
   producer:
     bootstrap-servers: localhost:9092
@@ -22,15 +25,17 @@ kafka:
     userDetailsTopic: userDetailsTopic
     addressDetailsTopic: addressDetailsTopic
     userPoliciesTopic: userPoliciesTopic
+    policySubTypesTopic: policySubTypesTopic
+    refPolicyTypesTopic: refPolicyTypesTopic
+    policyPaymentsTopic: policyPaymentsTopic
 
-
-aws:
-  accessKey: 
-  secretKey: 
-  region: us-west-2
 
 insurance:
   config:
-    userDetailsFile: src/main/resources/userDetails.csv
-    addressDetailsFile: src/main/resources/addressDetails.csv
-    userPoliciesFile: src/main/resources/userPolicies.csv
+    dirPath: /users/manmanok/documents/outputFiles/
+    userDetailsFile: userDetails
+    addressDetailsFile: addressDetails
+    userPoliciesFile: userPolicies
+    policySubTypesFile: policyTypes
+    refPolicyTypesFile: refPolicySubTypes
+    policyPaymentsFile: policyPayments
